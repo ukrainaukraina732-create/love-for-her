@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для самой любимой ♡</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff5f5;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+            margin: 20px;
+            border: 1px solid #ffe3e3;
+        }
+        h1 {
+            color: #ff6b81;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #ff8796;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #ff9aa6;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #6c5ce7;
+        }
+        .heart {
+            font-size: 50px;
+            color: #ff6b81;
+            animation: heartbeat 1.2s infinite;
+            margin: 20px 0;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            20% { transform: scale(1.1); }
+            40% { transform: scale(1.05); }
+            60% { transform: scale(1.15); }
+            80% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        @media (max-width: 500px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+        .card {
+            background: #fff9f9;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px dashed #ffb6c1;
+        }
+        .icon {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .quote {
+            font-style: italic;
+            background: #fdf0f0;
+            padding: 15px;
+            border-left: 4px solid #ff6b81;
+            margin: 30px 0;
+            border-radius: 4px;
+            color: #555;
+        }
+        .btn {
+            background-color: #ff6b81;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(255, 107, 129, 0.4);
+        }
+        .btn:hover {
+            background-color: #ff4757;
+            transform: translateY(-2px);
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="heart">LayoutPlaceholder(box_2d=[0, 0, 1000, 1000])</div>
+    <h1>Для самой любимой ♡</h1>
+    <p>Этот сайт — всего лишь маленькая попытка показать, насколько ты важна для меня.</p>
+    
+    <button class="btn" onclick="alert('Ты — моё любимое чудо! 💞')">Открыть моё послание</button>
+
+    <h2>Хочу тебе сказать…</h2>
+    <p>Я очень сильно тебя люблю. Мне нравится с тобой разговаривать, смеяться, делиться всякими мелочами и просто знать, что ты есть в моей жизни.</p>
+    <p>Ты делаешь даже обычные дни особенными. И мне не нужны какие-то идеальные моменты — мне просто хорошо, когда мы вместе.</p>
+    <p>Спасибо тебе за твою заботу, тепло и за то, что ты — это ты. Я очень ценю тебя. ♡</p>
+
+    <h2>Мои любимые мелочи</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="icon">☀</div>
+            <h3>Твоя улыбка</h3>
+            <p style="font-size:0.95em; color:#666;">Она способна сделать мой день намного лучше.</p>
+        </div>
+        <div class="card">
+            <div class="icon">💗</div>
+            <h3>Твоё тепло</h3>
+            <p style="font-size:0.95em; color:#666;">С тобой я чувствую себя спокойно и счастливо.</p>
+        </div>
+    </div>
+    
+    <div class="card" style="margin-top: 15px;">
+        <div class="icon">🌷</div>
+        <h3>Ты сама</h3>
+        <p style="font-size:0.95em; color:#666;">Мне дороги даже самые простые моменты рядом с тобой.</p>
+    </div>
+
+    <div class="quote">
+        «Из всех случайностей моей жизни знакомство с тобой — одна из самых любимых»
+    </div>
+
+    <h2>И это ещё не всё…</h2>
+    <p>Я хочу и дальше создавать с тобой воспоминания, поддерживать тебя, радовать и напоминать, как сильно ты мне дорога.</p>
+    <p><strong>Я люблю тебя. Очень-очень. ♡</strong></p>
+
+    <button class="btn" onclick="alert('Тут могла бы быть наша общая фотка или музыка! 🎵')">Нажми на меня</button>
+
+    <footer>Сделано с любовью, специально для тебя ♡</footer>
+</div>
+
+</body>
+</html>
+
